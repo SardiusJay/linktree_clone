@@ -1,0 +1,96 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+  position: relative;
+
+  .profile_img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    transition: all 0.2s;
+
+    position: relative;
+
+    > img {
+      object-fit: contain;
+    }
+
+    .overlay {
+      display: none;
+      background: linear-gradient(
+          0deg,
+          rgba(52, 64, 84, 0.75),
+          rgba(52, 64, 84, 0.75)
+        );
+        // url(.jpg);
+      position: absolute;
+      inset: 0;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 0.4rem;
+
+      > img {
+        cursor: pointer;
+      }
+    }
+
+    &:hover {
+      .overlay {
+        display: flex;
+      }
+    }
+
+    &:is(:focus, :focus-visible) {
+      // box-shadow: rgb(100 100 111 / 20%) 0px 0px 0px 10px;
+      border: 5.5px solid #ebe9fe;
+      outline: none;
+    }
+  }
+
+  .profile_btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    // background-image: url("/assets/share_button.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    border: 1px dashed;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.2s;
+
+    top: -10%;
+    right: 20%;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    @media (max-width: 767px) {
+      // background-image: url("/asset/share_button_mobile.svg");
+      top: -10%;
+      right: 8%;
+    }
+  }
+
+  > p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  > #slack,
+  #twitter {
+    display: none;
+  }
+}

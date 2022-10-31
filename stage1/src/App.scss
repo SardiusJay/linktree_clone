@@ -1,0 +1,72 @@
+$breakpoint_mobile: 375px;
+
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 4rem;
+
+  .links {
+    padding-inline: min(9vw, 144px);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    > a {
+      text-decoration: none;
+      text-align: center;
+      padding-block: 1.4rem;
+      color: inherit;
+      font-size: 1.125rem;
+      font-weight: 600;
+      background: #eaecf0;
+      border: 1px solid #eaecf0;
+      border-radius: 8px;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: #d0d5dd;
+      }
+
+      @media (max-width: $breakpoint_mobile) {
+        font-size: 1rem;
+      }
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.6rem;
+      padding-block: 1.5rem;
+
+      img {
+        width: 1.5rem;
+      }
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+      padding-inline: 1rem;
+    }
+  }
+
+  footer {
+    padding: 3rem 7rem;
+    .content {
+      border-top: 1px solid #eaecf0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-top: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      > p {
+        font-weight: 400;
+        color: #667085;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding-inline: 1rem;
+    }
+  }
+}
