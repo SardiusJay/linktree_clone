@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Profile />
       <section className="links">
-        <a target="_blank" id="twitter" href="https://twitter.com/SardiusJay" rel="noreferrer">
+        <a target="_blank" id="twitter" href="https://twitter.com/Signs_WISDOM" rel="noreferrer">
           Twitter Link
         </a>
         <a target="_blank" id="btn__zuri" href="https://training.zuri.team/" rel="noreferrer">
@@ -19,7 +19,7 @@ function App() {
         <a
           target="_blank"
           id="book__python"
-          href="https://books.zuri.team/python-for-beginners?ref_id=star_thrills" rel="noreferrer"
+          href="https://books.zuri.team/python-for-beginners?ref_id=signs" rel="noreferrer"
         >
           Python Books
         </a>
@@ -37,7 +37,7 @@ function App() {
           <a href="">
             <img src="assets/slack_logo.svg" alt="slack icon" />
           </a>
-          <a href="https://github.com/SardiusJay" target="_blank" rel="noreferrer">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">
             <img src="assets/github_icon.svg" alt="github icon" />
           </a>
         </div>

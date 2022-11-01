@@ -5,7 +5,7 @@ function Profile() {
   return (
     <section className="profile">
       <div className="profile_img" tabIndex="0">
-      <img id="profile__img" src="assets/Sardiusjay.png" alt="profile image" />
+      <img id="profile__img" src="assets/wisdom.jpg" alt="profile image" />
         <div className="overlay" aria-hidden>
           <img src="assets/camicon.svg" alt="camera icon" />
         </div>
@@ -14,9 +14,9 @@ function Profile() {
      
     
       </button>
-      <p>John Abidoye</p>
-      <p id="twitter">SardiusJay</p>
-      <p id="slack">SardiusJay</p>
+      <p>Wisdom Olowo</p>
+      <p id="twitter">Signs_WISDOM</p>
+      <p id="slack">signs</p>
     </section>
   );
 }
